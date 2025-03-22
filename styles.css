@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f7eb;
+}
+
+/* Container */
+.customizer {
+    position: relative;
+    width: 700px;  /* Match background image size */
+    height: 507px;
+}
+
+/* Background */
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Displayed images */
+.display {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+
+/* Button groups */
+.button-group {
+    position: absolute;
+    display: flex;
+    gap: 8px;
+}
+
+/* Individual buttons */
+.color-button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image fits properly */
+    cursor: pointer;
+    transition: transform 0.2s;
+    display: block; /* Makes sure the image isn't hidden */
+}
+
+.color-button:hover {
+    transform: scale(1.3);
+}
+
+/* Engraving input */
+#engravingInput {
+    position: absolute;
+    width: 50px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    outline: none;
+    top: 475px;
+    left: 340px;
+}
+
+/* Engraving text preview */
+#engravingPreview {
+    position: absolute;
+    font-size: 12px;
+    font-weight: regular;
+    color:gray;
+    font-family: Helvetica;
+    top: 240px;
+    left: 185px;
+    pointer-events: none;
+}
+
+/* Positioning leather buttons */
+#leatherButtons {
+    top: 390px;
+    left: 280px;
+}
+
+/* Positioning cord buttons */
+#cordButtons {
+    top: 433px;
+    left: 280px;
+}
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leather Folio by Sting & Snout Bindery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="customizer">
+        <!-- Background image (includes display area & text labels) -->
+        <img src="images/CUSTOM BG 2-22.png" alt="Background" class="background">
+
+        <!-- Displayed journal (leather & cord updates here) -->
+        <img id="journalLeather" class="display" src="" >
+        <img id="journalCord" class="display" src="" >
+
+        <!-- Leather color buttons -->
+        <div class="button-group" id="leatherButtons"></div>
+
+        <!-- Cord color buttons -->
+        <div class="button-group" id="cordButtons"></div>
+
+        <!-- Engraving text input -->
+        <input type="text" id="engravingInput" maxlength="3" placeholder="ABC" oninput="updateEngraving()">
+        <p id="engravingPreview"> </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
